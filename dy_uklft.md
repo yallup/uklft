@@ -26,7 +26,7 @@ section {
 </style> -->
 
 <style>
-   .font-size: 18px;
+   .font-size: 16px;
     
     img[alt~="center"] {
     display: block;
@@ -139,9 +139,9 @@ NFs learn mapping of prior $\rightarrow$ posterior, Nested sampling compresses p
 
 
 ----
-## Nested sampling simple lattices
+#### Nested sampling simple lattices
 
-Same scalar $\phi^4$ theory on $10\times10$ lattice as previous slide. Nested sampling computes the partition function as a
+Same scalar $\phi^4$ theory on $10\times10$ lattice as previous slide. NS computes partition function,
 
 $$
     Z(\beta)= \int D\phi ~e^{-\beta S(\phi)}, \quad \beta=\frac{1}{kT}
