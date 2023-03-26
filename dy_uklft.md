@@ -26,7 +26,7 @@ section {
 </style> -->
 
 <style>
-   .font-size: 20px;
+   .font-size: 18px;
     
     img[alt~="center"] {
     display: block;
@@ -150,8 +150,6 @@ $$
 <div class="columns">
 <div>
 
-.font-size: 13px;
-
 * The density of states (prior volume estimation) is the missing piece in
 inference, normally avoided/cancelled in traditional methods.
 * The sampling process is athermal, and invariant under monotonic
@@ -170,8 +168,7 @@ transformations of the sampled distribution
 </div>
 </div>
 
-By appropriate re-weighting, we can post-process the posterior
-samples to be at any temperature.
+By appropriate re-weighting, we can post-process the posterior samples to be at any temperature.
 
 ----
 
