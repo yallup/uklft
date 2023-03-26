@@ -150,15 +150,13 @@ $$
 <div class="columns">
 <div>
 
-<small>
+.font-size: 13px;
+
 * The density of states (prior volume estimation) is the missing piece in
 inference, normally avoided/cancelled in traditional methods.
-
 * The sampling process is athermal, and invariant under monotonic
 transformations of the sampled distribution
 * Clustering can be inserted at runtime
-
-<\small>
 
 </div>
 <div>
