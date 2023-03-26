@@ -86,10 +86,10 @@ $$ P(\theta | X) = \frac{\mathcal{L}(X | \theta)\times \Pi(\theta) }{Z}\, $$
 $$ Z(\beta) = \int D\theta \mathcal{L}(X | \theta)\Pi(\theta) $$
 
 Cambridge Cosmology (KICC and Cavendish AP) one of the driving forces in development: 
-* DY (Inference and ML applications) 
-* Will Barker (Gravity on the lattice)
-* Will Handley (all of the above)
-* Boris Deletic (Part III student, gradients in NS)
+$+$ DY (Inference and ML applications) 
+$+$ Will Barker (Gravity on the lattice)
+$+$ Will Handley (all of the above)
+$+$ Boris Deletic (Part III student, gradients in NS)
 
 ----
 ### What does this bring to the table
@@ -108,19 +108,76 @@ $$
 
 ----
 
+### Lattices and Machine Learning
 
-![bg 80%](./assets/beta_flow.gif)
+Interest in ML methods to overcome/complement difficulties with HMC
 
+<div class="columns">
+<div>
+
+*"Flow-based sampling for multimodal distributions in lattice field theory"* [[2107.00734]](https://arxiv.org/abs/2107.00734)
+
+$$
+S_E(\phi) = \sum_x (  \sum^D_{\mu=1} \frac{1}{2}(\phi(x+\hat{\mu}) -  \phi(x))^2+ \frac{1}{2} m^2 \phi(x)^2 + \lambda \phi(x)^4)
+$$
+
+<!-- $\phi^4$ scalar lagrangian with wrong sign (higgs) mass potential -->
+Sample on 2D, $10\times10$ lattice
+</div>
+<div>
+
+<center>
+
+![width:600px center](./assets/lattice.png)
+
+</center>
+  
+</div>
+</div>
+
+NFs learn mapping of prior $\rightarrow$ posterior, Nested sampling compresses prior $\rightarrow$ posterior. Roughly shared dimension limitations, shared promises...
+
+
+----
+## Nested sampling simple lattices
+
+Same scalar $\phi^4$ theory on $10\times10$ lattice as previous slide. Nested sampling computes the partition function as a
+
+$$
+    Z(\beta)= \int D\phi ~e^{-\beta S(\phi)}, \quad \beta=\frac{1}{kT}
+$$
+
+<div class="columns">
+<div>
+
+<small>
+* The density of states (prior volume estimation) is the missing piece in
+inference, normally avoided/cancelled in traditional methods.
+
+* The sampling process is athermal, and invariant under monotonic
+transformations of the sampled distribution
+* Clustering can be inserted at runtime
+
+<\small>
+
+</div>
+<div>
+
+<center>
+
+![width:600px center](./assets/ns_lat.png)
+
+</center>
+  
+</div>
+</div>
+
+By appropriate re-weighting, we can post-process the posterior
+samples to be at any temperature.
 
 ----
 
 
-<!-- _class: invert lead -->
+![bg 80%](./assets/beta_flow.gif)
 
-# __Conclusion__
-
-
-<center>
-
-## Thanks for listening
 
