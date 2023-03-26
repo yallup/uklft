@@ -62,10 +62,9 @@ section {
 
 <!-- _class: titlepage -->
 
-# Evidence is all you need
-## Nested Sampling for Lattice Field Theory
+# Nested Sampling for Lattice Field Theory
 ### David Yallup (<dy297@cam.ac.uk>)
-#### 24th Feb 2023
+#### 27th March 2023
 ##### UKLFT meeting
 
 ![height:100px](./assets/cam.png)
@@ -76,37 +75,41 @@ Live slides with animation available:
 ----
 <!-- paginate: true -->
 
-<!-- _class: invert lead -->
 
-# __info__
 
+## Nested Sampling
+
+Technique for computation of multidimensional integrals [[Ashton et al - Nature review paper]](https://arxiv.org/abs/2205.15570)
+> Widespread adoption in Bayesian evidence integrals 
+
+$$ P(\theta | X) = \frac{\mathcal{L}(X | \theta)\times \Pi(\theta) }{Z}\, $$
+$$ Z(\beta) = \int D\theta \mathcal{L}(X | \theta)\Pi(\theta) $$
+
+Cambridge Cosmology (KICC and Cavendish AP) one of the driving forces in development: 
+* DY (Inference and ML applications) 
+* Will Barker (Gravity on the lattice)
+* Will Handley (all of the above)
+* Boris Deletic (Part III student, gradients in NS)
 
 ----
+### What does this bring to the table
 
-### Himmelblau function
+Rather than a ensemble of chains, construct a chain of ensembles
+[[Original paper - Skilling]](https://projecteuclid.org/journals/bayesian-analysis/volume-1/issue-4/Nested-sampling-for-general-Bayesian-computation/10.1214/06-BA127.full)
+[[Our implementation, PolyChord - Handley et al]](https://arxiv.org/abs/1506.00171)
 
+<!-- ![bg right](./assets/himmelblau.png) -->
+
+![w:710](./assets/himmelblau.gif) ![w:400](./assets/himmelblau.png)
 
 $$
-
 f(x) \propto -\exp [(x^2 + y -11)^2 + \\ (x + y^2 -7)^2]
-
 $$
 
-Multimodal function, (exponential of square ~ Gaussian)
-
-Four identical local maxima
-
-
-![bg right](./assets/himmelblau.png)
-
-----
-
-![bg](./assets/himmelblau.gif)
-
 ----
 
 
-![bg 90%](./assets/beta_flow.gif)
+![bg 80%](./assets/beta_flow.gif)
 
 
 ----
