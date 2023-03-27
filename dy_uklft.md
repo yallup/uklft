@@ -107,6 +107,20 @@ f(x) \propto -\exp [(x^2 + y -11)^2 + \\ (x + y^2 -7)^2]
 $$
 
 ----
+### Non Bayesian inference example
+#### Matrix elements @ LHC
+
+Pose phase space integration as [[2205.02030]](https://arxiv.org/abs/2205.02030)
+$$ \sigma = \int\limits_\Omega d\Phi |\mathcal{M}|^2 (\Phi)\, $$
+$$ \mathcal{Z} = \int d\theta \mathcal{L} (\theta) \Pi (\theta)\, $$
+Explore scale choice as model comparison problem 
+__nb:__ ME as Likelihood, __not__ fitting to data
+
+
+![bg left:55%](./assets/gluon_4j_animation.gif)
+
+
+----
 
 ### Lattices and Machine Learning
 
@@ -115,7 +129,7 @@ Interest in ML methods to overcome/complement difficulties with HMC
 <div class="columns">
 <div>
 
-*"Flow-based sampling for multimodal distributions in lattice field theory"* [[2107.00734]](https://arxiv.org/abs/2107.00734)
+"Flow-based sampling for multimodal distributions in lattice field theory" [[2107.00734]](https://arxiv.org/abs/2107.00734)
 
 $$
 S_E(\phi) = \sum_x (  \sum^D_{\mu=1} \frac{1}{2}(\phi(x+\hat{\mu}) -  \phi(x))^2+ \frac{1}{2} m^2 \phi(x)^2 + \lambda \phi(x)^4)
