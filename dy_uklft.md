@@ -83,7 +83,7 @@ Technique for computation of multidimensional integrals [[Ashton et al - Nature 
 > Widespread adoption in Bayesian evidence integrals 
 
 $$ P(\theta | X) = \frac{\mathcal{L}(X | \theta)\times \Pi(\theta) }{Z}\, $$
-$$ Z(\beta) = \int D\theta \mathcal{L}(X | \theta)\Pi(\theta) $$
+$$ Z = \int D\theta \mathcal{L}(X | \theta)\Pi(\theta) $$
 
 Cambridge Cosmology (KICC and Cavendish AP) one of the driving forces in development: 
 $+$ DY (Inference and ML applications) 
